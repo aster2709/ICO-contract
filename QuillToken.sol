@@ -1,8 +1,7 @@
 //SPDX-License-Identifier: MIT 
 pragma solidity ^0.8;
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol";
-contract QuillToken is ERC20, Ownable {
+contract QuillToken is ERC20 {
     uint public totalSupply_ = 50000000000;
     uint reserve = 30;
     uint interestPayout = 20;

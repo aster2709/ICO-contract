@@ -25,7 +25,9 @@ contract QuillToken is ERC20 {
         _mint(_HR, HR * totalSupply_ * 1e16);
         _mint(_generalFund, generalFund * totalSupply_ * 1e16);
         _mint(_airDrops, airDrops * totalSupply_ * 1e16);
-        _mint(_ICOContract, ICO * totalSupply_ * 1e16);
         emit TokenDeployed(msg.sender, block.timestamp);
+    }
+    function mintToICO(address _ICO) external {
+        _mint(_ICOContract, ICO * totalSupply_ * 1e16);
     }
 }
